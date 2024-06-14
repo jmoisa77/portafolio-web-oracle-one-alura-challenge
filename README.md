@@ -9,5 +9,5 @@
 ---
 #### Vista previa
 <p align="center" >
-     <img width="600" heigth="600" src="https://user-images.githubusercontent.com/101413385/169064699-f268715c-822c-4335-b066-97a1bc1ea8e1.png">
+     <img src="https://github.com/jmoisa77/portafolio-web-oracle-one-alura-challenge/blob/a4f64631719e07591804e8589489a53e8e905466/assets/img/vistaprevia.pnghttps://github.com/jmoisa77/portafolio-web-oracle-one-alura-challenge/blob/a4f64631719e07591804e8589489a53e8e905466/assets/img/vistaprevia.png">
 </p>
