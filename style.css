@@ -1,0 +1,93 @@
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --font-family: 'Raleway', sans-serif;
+    --font-color: #464646;
+    --font-color-two: #ffffff;
+    --primary-background-color: #84AC4C;
+    --secondary-background-color: #F3CB4D;
+    --primary-btn-color: #665923;
+    --width-height-pic-Desk: 23em;
+    --width-height-pic-Tablet: 9.125em;
+    --width-height-pic-Smartphone: 6.125em;
+    --height-header-Desk: 88px;
+    --height-header-Tablet: 80px;
+    --height-menu-Tablet: 32px;
+    --height-header-Smartphone: 124px;
+    --height-sectionPresentation: calc(100vh - var(--height-header-Desk));
+    --height-sectionPresentation-Smartphone: calc(100vh - var(--height-header-Smartphone));
+    --height-sectionPresentation-Tablet: calc(100vh - var(--height-header-Tablet));
+    --charSizeDesk-title: 45px;
+    --charSizeDesk-subtitleSection: 32px;
+    --charSizeDesk-subtitlePic: 22px;
+    --charSizeDesk-All: 16px;
+    --charSizeTablet-titles: 22px;
+    --charSizeTablet-All: 16px;
+
+    --charSizeTablet-pargraph: 14px;
+
+
+    --charSizeSmartphone-titles: 22px;
+
+    --charSizeSmartphone-subtitles: 16px;
+
+    --charSizeSmartphone-paragraph: 14px;
+
+    --size-containerMaxWidth: 1136px;
+
+    --padding-tablet-smartphoneHorizontal: 0 2em;
+    --padding-smartphoneVertical: 0 1em;
+
+    --margin-color: 0 auto;
+}
+
+html {
+    color: var(--font-color);
+    font-family: var(--font-family);
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.font-style {
+    color: var(--font-color);
+    font-family: var(--font-family);
+}
+
+.link-style {
+    color: var(--font-color);
+    font-weight: 500;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.link-style:hover {
+    color: var(--primary-btn-color);
+}
+
+.subtitles {
+    font-size: var(--charSizeDesk-subtitleSection);
+    font-weight: 700;
+    margin: 0 0 2em 0;
+    ;
+    text-align: center;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1080px) {
+    .subtitulos {
+        font-size: var(--charSizeTablet-titles);
+    }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+    .subtitulos {
+        font-size: var(--charSizeSmartphone-titles);
+    }
+}

@@ -1,0 +1,46 @@
+.btn {
+    color: var(--primary-btn-color);
+    cursor: pointer;
+    background: transparent;
+    border: solid 0.1em var(--primary-btn-color);
+    font-size: var(--charSizeDesk-All);
+    font-weight: 400;
+    margin: 0 1em 0 0;
+    padding: 1em;
+    text-decoration: none;
+    transition: all 0.5s ease-out;
+    width: fit-content;
+}
+
+.btn:hover {
+    background-color: var(--primary-btn-color);
+    color: var(--primary-background-color);
+}
+
+.btn--secondary {
+    color: var(--primary-background-color);
+    background: var(--primary-btn-color);
+}
+
+.btn--secondary:hover {
+    background-color: transparent;
+    color: var(--primary-btn-color);
+}
+
+.btn--blocked[type="submit"] {
+    background: #4e4b4b;
+    border: solid 0.1em #4e4b4b;
+    pointer-events: none;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1080px) {
+    .btn {
+        font-size: var(--tamañoLetraTablet-parrafoSobreMi-dscImagenes-botones);
+    }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+    .btn {
+        font-size: var(--charSizeSmartphone-paragraph);
+    }
+}

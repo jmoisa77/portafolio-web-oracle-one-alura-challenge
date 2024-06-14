@@ -1,0 +1,145 @@
+.personal-data {
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    justify-content: space-between;
+    margin-top: 0;
+    width: inherit;
+}
+
+.personal-data__presentation {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    justify-content: center;
+    margin-top: var(--height-header-Desk);
+    width: 66.2%;
+}
+
+.personal-data__title {
+    color: #2c2828;
+    font-size: var(--charSizeDesk-title);
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.personal-data__paragraph {
+    color: #2c2828;
+    font-size: var(--charSizeDesk-subtitlePic);
+    font-weight: 500;
+    margin: 0.5em 0 0 0;
+}
+
+.personal-data__contacts {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+    width: 25.1em;
+}
+
+.personal-data__contact {
+    transition: all 0.5s ease-out;
+}
+
+.personal-data__contact:hover {
+    transform: translate(0, 0.3em);
+}
+
+.personal-data__link {
+    align-items: center;
+    color: var(--font-color);
+    display: flex;
+    text-decoration: none;
+}
+
+.personal-data__icon {
+    height: 50px;
+    width: 50px;
+}
+
+.personal-data__icon--github {
+    background: url("../img/github.png") no-repeat center / cover;
+}
+
+.personal-data__icon--linkedin {
+    background: url("../img/linkedin.png") no-repeat center / cover;
+}
+
+.personal-data__icon--resume {
+    background: url("../img/cv.png") no-repeat center / cover;
+}
+
+.personal-data__image {
+    border-radius: 100%;
+    height: var(--width-height-pic-Desk);
+    margin-top: var(--height-header-Desk);
+    width: var(--width-height-pic-Desk);
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1080px) {
+
+    .personal-data {
+        height: 100vh;
+        margin-top: 0;
+    }
+
+    .personal-data__presentation {
+        height: auto;
+    }
+
+    .personal-data__title {
+        font-size: var(--charSizeTablet-titles);
+    }
+
+    .personal-data__paragraph {
+        font-size: var(--charSizeTablet-All);
+        font-weight: 500;
+    }
+
+    .personal-data__image {
+        height: var(--ancho-alto-foto-Tablet);
+        width: var(--ancho-alto-foto-Tablet);
+    }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+
+    .personal-data {
+        flex-direction: column;
+        height: 100vh;
+        justify-content: center;
+        margin-top: 0;
+    }
+
+    .personal-data__presentation {
+        height: auto;
+        margin-top: 0;
+        order: 1;
+        width: 100%;
+    }
+
+    .personal-data__title {
+        font-size: var(--charSizeSmartphone-titles);
+    }
+
+    .personal-data__paragraph {
+        font-size: var(--charSizeSmartphone-paragraph);
+        font-weight: 500;
+    }
+
+    .personal-data__contacts {
+        width: 100%;
+    }
+
+    .personal-data__link {
+        font-size: var(--charSizeSmartphone-paragraph);
+    }
+
+    .personal-data__image {
+        height: var(--width-height-pic-Smartphone);
+        margin-top: 0;
+        order: 0;
+        width: var(--width-height-pic-Smartphone);
+    }
+}

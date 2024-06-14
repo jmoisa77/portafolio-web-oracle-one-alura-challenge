@@ -1,0 +1,121 @@
+/*Se establece padding superior e inferior*/
+.academic-formation {
+    padding: var(--height-header-Desk) 0;
+}
+
+/*Grid con items*/
+.academic-formation__institutions {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(368px, 1fr));
+    grid-template-rows: 1fr;
+    gap: 16px 14px;
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+
+/*Altura automática*/
+.academic-formation__institution {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: auto;
+    width: inherit;
+}
+
+.academic-formation__link {
+    display: inline-block;
+    width: inherit;
+}
+
+.academic-formation__image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 256px;
+    width: 256px;
+}
+
+.academic-formation__info {
+    margin: 8px 0 0 0;
+}
+
+.academic-formation__formation {
+    font-size: var(--charSizeDesk-subtitlePic);
+    font-weight: 700;
+    margin: 0 0 8px 0;
+}
+
+/*Limpieza de margen y estableciendo tamaño de letra*/
+.academic-formation__name {
+    font-size: var(--charSizeDesk-All);
+    font-weight: 500;
+    margin: 0;
+}
+
+/*Tablets y Smartphones grandes u horizontales*/
+@media only screen and (min-width: 768px) and (max-width: 1080px) {
+    .academic-formation {
+        padding: var(--height-header-Tablet) 0;
+    }
+}
+
+/*Tablets y Smartphones grandes u horizontales*/
+@media only screen and (min-width: 768px) and (max-width: 1135px) {
+    .academic-formation__institutions {
+
+        grid-template-columns: repeat(auto-fit, minmax(224px, 1fr));
+        grid-template-rows: 1fr;
+    }
+
+    .academic-formation__institution {
+        /*Altura automática*/
+        height: auto;
+        width: inherit;
+    }
+
+    /*Altura y ancho del contenedor ul*/
+    .academic-formation__image {
+        height: 160px;
+        width: inherit;
+    }
+
+    .academic-formation__formation {
+        font-size: var(--charSizeTablet-All);
+    }
+
+    .academic-formation__name {
+        font-size: var(--tamañoLetraTablet-parrafoSobreMi-dscImagenes-botones);
+    }
+}
+
+/*Smartphones verticales*/
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+    .academic-formation {
+        padding: var(--altura-header-Celular) 0;
+    }
+
+    .academic-formation__institutions {
+        /*Items en dirección vertical y centrados horizontalmente*/
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    .academic-formation__institution {
+        max-width: 296px;
+        width: 100%;
+    }
+
+    .academic-formation__image {
+        height: 160px;
+        width: inherit;
+    }
+
+    .academic-formation__formation {
+        font-size: var(--charSizeSmartphone-subtitles);
+    }
+
+    .academic-formation__name {
+        font-size: var(--charSizeSmartphone-paragraph);
+    }
+}

@@ -1,0 +1,45 @@
+.menu {
+    align-items: center;
+    display: flex;
+    height: inherit;
+    justify-content: space-evenly;
+    max-width: 41.5em;
+    width: 100%;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1080px) {
+    .menu {
+        height: var(--height-header-Tablet);
+        width: inherit;
+    }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+
+    .menu {
+        display: block;
+        height: var(--altura-header-Celular);
+        max-width: 100%;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+
+    .menu__link {
+        border-top: solid 0.2em var(--font-color);
+        display: inherit;
+        font-size: var(--charSizeSmartphone-paragraph);
+        font-weight: 500;
+        padding: 0.1em 0;
+        text-align: center;
+        transition: 0.2s ease-out;
+    }
+
+    .menu__link.link-style:hover {
+        transform: none;
+    }
+
+    .menu__link.link-style:active {
+        background-color: var(--font-color);
+        color: var(--primary-background-color);
+    }
+}

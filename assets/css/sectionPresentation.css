@@ -1,0 +1,33 @@
+.section-presentation {
+    background-color: rgba(245, 236, 216, 0.575);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1080px) {
+    .section-presentation {
+        background-color: rgba(245, 236, 216, 0.575);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: bottom;
+        height: 100vh;
+    }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+
+    .section-presentation {
+        background-color: rgba(245, 236, 216, 0.575);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        width: 100%;
+    }
+}

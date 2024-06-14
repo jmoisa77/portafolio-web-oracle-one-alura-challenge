@@ -1,0 +1,42 @@
+.section-skills {
+    padding: var(--height-header-Desk) 0;
+}
+
+.section-skills__icon {
+    width: 75px;
+    height: 75px;
+}
+
+.section-skills__icon--html5 {
+    background: url("../img/html.png") center / 100% 100% no-repeat;
+}
+
+.section-skills__icon--javascript {
+    background: url("../img/js.png") center / 100% 100% no-repeat;
+}
+
+.section-skills__icon--css3 {
+    background: url("../img/css.png") center / 100% 100% no-repeat;
+}
+
+.section-skills__icon--git {
+    background: url("../img/git.png") center / 100% 100% no-repeat;
+}
+
+.section-skills__description {
+    font-weight: 700;
+    margin: 10px 0 0 0;
+    width: 100%;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1080px) {
+    .section-skills {
+        padding: var(--height-header-Tablet) 0;
+    }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+    .section-skills {
+        padding: var(--altura-header-Celular) 0;
+    }
+}

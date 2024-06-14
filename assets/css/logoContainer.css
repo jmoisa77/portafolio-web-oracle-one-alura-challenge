@@ -1,0 +1,38 @@
+.logo-container {
+    align-items: center;
+    display: flex;
+    height: inherit;
+    justify-content: center;
+    width: 3.5em;
+}
+
+.logo-container__logo {
+    width: 3.2em;
+}
+
+.logoContainer__link {
+    text-decoration: none;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1080px) {
+    .logo-container {
+        height: 3em;
+        width: 100%;
+    }
+
+    .logo-container__logo {
+        flex-direction: column;
+        width: 2.2em;
+    }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+    .logo-container {
+        height: 3em;
+        width: 100%;
+    }
+    .logo-container__logo {
+        flex-direction: column;
+        width: 2.2em;
+    }
+}

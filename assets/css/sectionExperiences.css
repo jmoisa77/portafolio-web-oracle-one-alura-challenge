@@ -1,0 +1,157 @@
+.experiences-area {
+    padding: var(--height-header-Desk) 0;
+}
+
+.experiences-area__experience {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 64px 0;
+}
+
+.experiences-area__experience:last-of-type {
+    margin: 0;
+}
+
+.experiences-area__image {
+    height: 25.375em;
+    image-rendering: -webkit-optimize-contrast;
+    width: 66.198%;
+}
+
+.experiences-area__image--first{
+    order: 0;
+}
+
+.experiences-area__image--second{
+    order: 1;
+}
+
+.experiences-area__descriptions {
+    flex-direction: column;
+    justify-content: center;
+    width: 31.802%;
+}
+
+.experiences-area__descriptions--second {
+    order: 1;
+}
+
+.experiences-area__descriptions--first {
+    order: 0;
+}
+
+.experiences-area__project {
+    font-size: var(--charSizeDesk-subtitlePic);
+    font-weight: 700;
+    margin: 0;
+}
+
+.experiences-area__organization {
+    font-size: var(--charSizeDesk-All);
+    font-weight: 500;
+    margin: 0.5em 0;
+}
+
+.experiences-area__btns {
+    display: flex;
+    width: 100%;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1080px) {
+    .experiences-area {
+        padding: var(--height-header-Tablet) 0;
+    }
+
+    .experiences-area__experience {
+        flex-direction: column;
+    }
+
+    .experiences-area__image {
+        height: 400px;
+        width: 100%;
+    }
+
+    .experiences-area__image--first{
+        order: 0;
+    }
+
+    .experiences-area__image--second{
+        order: 0;
+    }
+
+    .experiences-area__descriptions {
+        background-position: center;
+        margin: 0.5em 0 0 0;
+        padding: 0 0 0.5em 0;
+        width: 100%;
+    }
+
+    .experiences-area__descriptions--second {
+        order: 0;
+    }
+
+    .experiences-area__descriptions--first {
+        order: 0;
+    }
+
+    .experiences-area__project {
+        font-size: var(--charSizeTablet-All);
+    }
+
+    .experiences-area__organization {
+        font-size: var(--tamañoLetraTablet-parrafoSobreMi-dscImagenes-botones);
+    }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+    .experiences-area {
+        padding: var(--altura-header-Celular) 0;
+    }
+
+    .experiences-area__experience {
+        flex-direction: column;
+    }
+
+    .experiences-area__image {
+        height: 12em;
+        width: 100%;
+    }
+
+    .experiences-area__image--first{
+        order: 0;
+    }
+
+    .experiences-area__image--second{
+        order: 0;
+    }
+
+    @media only screen and (min-width: 428px) and (max-width: 767px) {
+        .experiences-area__image {
+            width: 100%;
+            height: 20em;
+        }
+    }
+
+    .experiences-area__descriptions {
+        background-position: center;
+        margin: 0.5em 0 0 0;
+        padding: 0 0 0.5em 0;
+        width: 100%;
+    }
+
+    .experiences-area__descriptions--second {
+        order: 0;
+    }
+
+    .experiences-area__descriptions--first {
+        order: 0;
+    }
+
+    .experiences-area__project {
+        font-size: var(--charSizeSmartphone-subtitles);
+    }
+
+    .experiences-area__organization {
+        font-size: var(--charSizeSmartphone-paragraph);
+    }
+}

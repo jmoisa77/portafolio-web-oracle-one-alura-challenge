@@ -1,0 +1,42 @@
+.bio {
+    max-width: 1080px;
+    padding: var(--height-header-Desk) 0;
+    width: 100%;
+}
+
+.bio__subtitle {
+    margin: 0;
+}
+
+.bio__paragraph {
+    line-height: 19px;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1080px) {
+
+    .bio {
+        padding: var(--height-header-Tablet) 0;
+    }
+    .bio__subtitle {
+        font-size: var(--charSizeTablet-titles);
+    }
+    .bio__paragraph {
+        font-size: var(--tamañoLetraTablet-parrafoSobreMi-dscImagenes-botones);
+    }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+    .bio {
+        padding: var(--altura-header-Celular) 0;
+    }
+
+    .bio__subtitle {
+        font-size: var(--charSizeSmartphone-titles);
+    }
+
+    .bio__paragraph {
+        font-size: var(--charSizeSmartphone-paragraph);
+    }
+}

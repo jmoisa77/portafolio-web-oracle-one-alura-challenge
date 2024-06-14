@@ -1,0 +1,42 @@
+.section-hobbies {
+    padding: var(--height-header-Desk) 0;
+}
+
+.section-hobbies__icon {
+    width: 75px;
+    height: 75px;
+}
+
+.section-hobbies__icon--gym {
+    background: url("../img/gym.png") center / 100% 100% no-repeat;
+}
+
+.section-hobbies__icon--videogames {
+    background: url("../img/videogames.png") center / 100% 100% no-repeat;
+}
+
+.section-hobbies__icon--cycling {
+    background: url("../img/cycling.png") center / 100% 100% no-repeat;
+}
+
+.section-hobbies__icon--movies {
+    background: url("../img/movies.png") center / 100% 100% no-repeat;
+}
+
+.section-hobbies__paragraph {
+    font-weight: 700;
+    margin: 0.5em 0 0 0;
+    width: 100%;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1080px) {
+    .section-hobbies {
+        padding: var(--height-header-Tablet) 0;
+    }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+    .section-hobbies {
+        padding: var(--altura-header-Celular) 0;
+    }
+}
